@@ -1,9 +1,10 @@
 CREATE TABLE "Employees" (
-  "FullName"        TEXT,
-  "Salary"          INT,
-  "JobPosition"     TEXT,
+  "FullName"        TEXT NOT NULL,
+  "Salary"          INT NOT NULL,
+  "JobPosition"     TEXT NOT NULL,
   "PhoneExtension"  INT,
-  "IsPartTime"      BOOLEAN
+  "IsPartTime"      BOOLEAN,
+  "Id"              SERIAL PRIMARY KEY
 );
 
 INSERT INTO "Employees" ("FullName", "Salary", "JobPosition", "PhoneExtension", "IsPartTime")
